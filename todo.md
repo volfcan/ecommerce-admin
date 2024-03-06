@@ -1,0 +1,1 @@
+1. Sayfaya gizli sekmeden ilk girdiginde sign-in yonlendiriyor fakat sonrasinda blank page aliyoruz.
