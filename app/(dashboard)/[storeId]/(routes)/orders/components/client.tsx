@@ -1,13 +1,10 @@
 "use client"
 
-import { Plus } from "lucide-react";
 import { Heading } from "@/components/ui/heading";
 import { Separator } from "@/components/ui/separator";
 import { OrderColumn, columns } from "./columns";
 
 import { DataTable } from "@/components/ui/data-table";
-
-
 
 
 interface OrderClientProps {
@@ -17,7 +14,6 @@ interface OrderClientProps {
 export const OrderClient: React.FC<OrderClientProps> = ({
     data
 }) => {
-
     return (
         <>
             <Heading
@@ -25,7 +21,7 @@ export const OrderClient: React.FC<OrderClientProps> = ({
             description="Manage orders for your store"
             />
             <Separator/>
-            <DataTable searchKey="label" columns={columns} data={data}/>
+            <DataTable searchKey="products" columns={columns} data={data}/>
         </>
     )
 }
