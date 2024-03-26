@@ -1,33 +1,31 @@
-"use client"
+"use client";
 
-import { ColumnDef } from "@tanstack/react-table"
-import { CellAction } from "./cell-action"
-
+import { ColumnDef } from "@tanstack/react-table";
+import { CellAction } from "./cell-action";
 
 export type CategoryColumn = {
-  id: string
-  name: string
-  billboardLabel: string
+  id: string;
+  name: string;
+  billboardLabel: string;
   createdAt: string;
-}
+};
 
 export const columns: ColumnDef<CategoryColumn>[] = [
   {
     accessorKey: "name",
-    header: "Name",
+    header: "Ad",
   },
   {
     accessorKey: "billboard",
-    header: "Billboard",
+    header: "Afiş",
     cell: ({ row }) => row.original.billboardLabel,
   },
   {
     accessorKey: "createdAt",
-    header: "Date",
+    header: "Tarih",
   },
   {
     id: "actions",
-    cell: ({ row }) => <CellAction data={row.original}/>
-  }
-  
-]
+    cell: ({ row }) => <CellAction data={row.original} />,
+  },
+];

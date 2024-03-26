@@ -60,7 +60,7 @@ const action = initialData ? 'Save changes' : 'Create';
         defaultValues: initialData || {
             name: '',
             value: ''
-        } 
+        }
     })
 
     const onSubmit = async (data: SizeFormValues) => {
@@ -98,7 +98,7 @@ const action = initialData ? 'Save changes' : 'Create';
 
     return (
         <>
-        <AlertModal 
+        <AlertModal
             isOpen={open}
             onClose={() => setOpen(false)}
             onConfirm={onDelete}
@@ -117,7 +117,7 @@ const action = initialData ? 'Save changes' : 'Create';
             size="sm"
             onClick={() => setOpen(true)}
              >
-                <Trash className="h-4 w-4"/>    
+                <Trash className="h-4 w-4"/>
              </Button>
              )}
         </div>
